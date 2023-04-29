@@ -12,7 +12,7 @@ class Piloto:
     @nombre.setter
     def nombre(self,dato):
         self.__nombre = dato
-    
+
     @property
     def fechaNacimiento(self):
         return self.__fechaNacimiento
@@ -28,7 +28,7 @@ class Piloto:
     @salarioAnual.setter
     def salarioAnual(self,dato):
         self.__salarioAnual = dato
-    
+
     @property
     def pais(self):
         return self.__pais

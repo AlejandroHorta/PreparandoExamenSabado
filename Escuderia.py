@@ -6,13 +6,14 @@ class Escuderia:
         self.__casaMotor = None
         self.__pilotoPrincipal = Piloto()
         self.__pilotoSecundario = Piloto()
-    
+        self.__costos = None
+
     @property
     def nombre(self):
         return self.__nombre
 
     @nombre.setter
-    def nombre(self,dato):
+    def nombre(self, dato):
         self.__nombre = dato
 
     @property
@@ -20,15 +21,15 @@ class Escuderia:
         return self.__casaMotor
 
     @casaMotor.setter
-    def casaMotor(self,dato):
+    def casaMotor(self, dato):
         self.__casaMotor = dato
 
     @property
-    def pilotoPrincipa(self):
+    def pilotoPrincipal(self):
         return self.__pilotoPrincipal
 
-    @pilotoPrincipa.setter
-    def pilotoPrincipa(self,dato):
+    @pilotoPrincipal.setter
+    def pilotoPrincipal(self, dato):
         self.__pilotoPrincipal = dato
 
     @property
@@ -36,5 +37,13 @@ class Escuderia:
         return self.__pilotoSecundario
 
     @pilotoSecundario.setter
-    def pilotoSecundario(self,dato):
+    def pilotoSecundario(self, dato):
         self.__pilotoSecundario = dato
+
+    @property
+    def costos(self):
+        return self.__costos
+
+    @costos.setter
+    def costos(self, dato):
+        self.__costos = dato
