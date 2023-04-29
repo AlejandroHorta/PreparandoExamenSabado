@@ -13,6 +13,16 @@ while n <= nroEscuderias:
     escuderia.pilotMain.salary = input("Write the salary")
     escuderia.pilotMain.country = input("Write the country")
     escuderia.pilotTwo = input("type the name of the piloto two")
-    escuderia.value = input("type the value")
-         
-listEscuderias.append(escuderia)
+    escuderia.value = input("type the value")     
+    listEscuderias.append(escuderia)
+
+for scuderia in listEscuderias:
+    print("the escuedira is: ", escuderia.name ,"THe value is: ", escuderia.value)
+
+valueMax = 1
+nameEcuderiaMax = None
+for scuderia in escuderia:
+    if escuderia.value > valueMax:
+        valueMax = escuderia.value
+        nameEcuderiaMax = escuderia.name
+    
