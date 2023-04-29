@@ -1,37 +1,38 @@
 class Piloto:
     def __init__(self):
-        self.__nombre= None
+        self.__Nombre= None
         self.__fechaNacimiento= None
         self.__salarioAnual= None
         self.__Pais= None
     # _________________________________   
     @property
-    def nombre(self):
-        return self.nombre
+    def Nombre(self):
+        return self.__Nombre
     
     @property
     def fechaNacimiento(self):
-        return self.nombre
+        return self.__fechaNacimiento
     @property
     def salarioAnual(self):
-        return self.nombre
+        return self.__salarioAnual
     @property
     def Pais(self):
-        return self.nombre
+        return self.__Pais
     
     #_______________________________________
-    @nombre.setter
-    def nombre(self,dato):
-        self.__nombre=dato
+    
+    @Nombre.setter
+    def Nombre(self,dato):
+        self.__Nombre=dato
 
-    @nombre.setter
-    def nombre(self,dato):
+    @fechaNacimiento.setter
+    def fechaNacimiento(self,dato):
         self.__fechaNacimiento=dato
 
-    @nombre.setter
-    def nombre(self,dato):
+    @salarioAnual.setter
+    def salarioAnual(self,dato):
         self.__salarioAnual=dato
 
-    @nombre.setter
-    def nombre(self,dato):
+    @Pais.setter
+    def Pais(self,dato):
         self.__Pais=dato

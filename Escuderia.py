@@ -9,25 +9,25 @@ class Escuderia:
         self.__costos=None
 
     @property
-    def nombre(self):
-        return self.nombre
+    def Nombre(self):
+        return self.__Nombre
     @property
     def CasaMotor(self):
-        return self.CasaMotor
+        return self.__CasaMotor
 
     @property
     def PilotoPrincipal(self):
-        return self.PilotoPrincipal
+        return self.__PilotoPrincipal
     @property
     def Piloto2(self):
-        return self.Piloto2
+        return self.__Piloto2
     @property
     def costos(self):
-        return self.costos
+        return self.__costos
     #______________________________
-    @nombre.setter
-    def nombre(self,dato):
-        self.__nombre=dato
+    @Nombre.setter
+    def Nombre(self,dato):
+        self.__Nombre=dato
 
     @CasaMotor.setter
     def CasaMotor(self,dato):
