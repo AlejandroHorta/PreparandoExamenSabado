@@ -1,7 +1,7 @@
 from Piloto import Piloto
 
 class Escuderia:
-        def __init__(self):
+    def __init__(self):
         self.__nombre = None
         self.__casaMotor = None
         self.__pilotoPrincipal = Piloto()
