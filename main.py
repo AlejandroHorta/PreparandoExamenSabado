@@ -5,24 +5,20 @@ contador = 1
 numeroEscuderias = int(input("Digite el numero de escuderias: "))
 while contador <= numeroEscuderias:
     escuderia = Escuderia()
-    escuderia.nombre = input("digite el nombre de la escuderia: ")
-    escuderia.casaMotor = input("digite el nombre del casamotor: ")
-    escuderia.pilotoPrincipal.nombre = input("digita el nombre del piloto: ")
-    escuderia.pilotoPrincipal.salarioAnual = input("digita el salario: ")
-    escuderia.pilotoPrincipal.fechaNacimiento = input(
-        "digita la fecha de nacimiento: ")
-    escuderia.pilotoPrincipal.pais = input("digita el pais: ")
-    escuderia.piloto2.nombre = input("digita el nombre del piloto: ")
-    escuderia.piloto2.salarioAnual = input("digita el salario: ")
-    escuderia.piloto2.fechaNacimiento = input(
-        "digita la fecha de nacimiento: ")
-    escuderia.piloto2.pais = input("digita el pais del piloto: ")
+    escuderia.nombre = input("Digita el nombre de la escuderia: ")
+    escuderia.casaMotor = input("Digita el nombre del casamotor: ")
+    escuderia.pilotoPrincipal.nombre = input("Digita el nombre del piloto pricipal: ")
+    escuderia.pilotoPrincipal.salarioAnual = input("Digita el salario: ")
+    escuderia.pilotoPrincipal.fechaNacimiento = input("Digita la fecha de nacimiento: ")
+    escuderia.pilotoPrincipal.pais = input("Digita el pais: ")
+    escuderia.pilotoSecundario.nombre = input("Digita el nombre del piloto secundario: ")
+    escuderia.pilotoSecundario.salarioAnual = input("Digita el salario: ")
+    escuderia.pilotoSecundario.fechaNacimiento = input("Digita la fecha de nacimiento: ")
+    escuderia.pilotoSecundario.pais = input("Digita el pais del piloto: ")
     escuderia.costos = input("ingrese los costos: ")
-
-
-escuderias.append(escuderia)
-
-contador = contador + 1
+    
+    escuderias.append(escuderia)
+    contador += 1
 
 # Recorriendo la Lista de escuderías
 
@@ -30,9 +26,9 @@ for escuderia in escuderias:
     print(escuderia.nombre, escuderia.costos)
 
 costoMayor = 0
-nombreEscuderiaMasCara = None
+escuderiaMasCara = None
 
 for escuderia in escuderias:
     if escuderia.costos > costoMayor:
         costoMayor = escuderia.costos
-        nombreEscuderiaMasCara = escuderia.nombre
+        escuderiaMasCara = escuderia.nombre
