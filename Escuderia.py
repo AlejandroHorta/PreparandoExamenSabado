@@ -3,9 +3,10 @@ from Piloto import Piloto
 class Escuderia:
     def __init__(self):
         self.__nombre=None
-        self.casaMotor=None
-        self.pilotoPrincipal=Piloto()
-        self.pilotoSegundario=Piloto()
+        self.__casaMotor=None
+        self.__pilotoPrincipal=Piloto()
+        self.__pilotoSegundario=Piloto()
+        self.__costos=None
 
 
     @property
@@ -42,4 +43,13 @@ class Escuderia:
     @pilotoSegundario.setter
     def pilotoSegundario(self,dato):
         self.__pilotoSegundario=dato
+
+
+    @property
+    def costos (self):
+        return self.__costos
+    
+    @costos.setter
+    def costos(self,dato):
+        self.__costos=dato
         
