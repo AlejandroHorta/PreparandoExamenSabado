@@ -4,8 +4,9 @@ class Escuderia:
     def __init__(self):
         self.__nombre =None
         self.__casamotor = None
-        self.__pilotoPrincipal = None
-        self.__pilotosSecundario = None
+        self.__pilotoPrincipal = Piloto()
+        self.__pilotosSecundario = Piloto ()
+        self.__costos =  None
 
 @property
 def nombre(self):
@@ -39,6 +40,14 @@ def pilotosSecundario(self):
 @pilotosSecundario.setter
 def pilotosSecundario(self,dato):
         self.__pilotosSecundario = dato
+
+@property
+def costos(self):
+    return self.__costos
+
+@costos.setter
+def costos(self,dato):
+        self.__costos = dato
 
 
 
