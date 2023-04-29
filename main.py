@@ -18,6 +18,16 @@ while contador <= numeroEscuderias:
     escuderia.costos= input("ingrese los costos")
 
 
-escuderias.append(escuderia)
-
+    escuderias.append(escuderia)
     contador = contador + 1
+#recorriendo la lista de escuderias
+for escuderia in escuderias:
+    print(escuderia.nombre, escuderia.costos)
+
+costoMayor=0    
+nombreEscuderiaMascara=None
+for escuderia in escuderias:
+    if escuderia.costos > costoMayor:
+        costoMayor= escuderia.costos
+        nombreEscuderiaMascara = escuderia.nombre
+        
