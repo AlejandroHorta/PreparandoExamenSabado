@@ -11,11 +11,10 @@ while contador <  numeroEscuderias:
    escuderia.pilotoPrincipal.salarioAnual=input("digite el eslario")
    escuderia.pilotoPrincipal.fechaNacimiento=input("digita la fecha de nacimiento")
    escuderia.pilotoPrincipal.pais=input("digite el pais")
-   escuderia.pilotoSegundario.nombre=input("digite nombre")
-   escuderia.pilotoSegundario.salarioAnual=input("digite salario")
-   escuderia.pilotoSegundario.fechaNacimiento=input("digite fecha")
-   escuderia.pilotoSegundario.Pais=input("digite pais")
+   escuderia.piloto2.nombre=input("digite nombre")
+   escuderia.piloto2.salarioAnual=input("digite salario")
+   escuderia.piloto2.fechaNacimiento=input("digite fecha")
+   escuderia.piloto2.Pais=input("digite pais")
    escuderia.costos=input("digite volor de los costos")
-   
    escuderia.append(escuderia)
    contador=contador +1
