@@ -3,7 +3,7 @@ class Piloto:
         self.__nombre= None
         self.__fechaNacimiento= None
         self.__salarioAnual= None
-        self.__Pais= None
+        self.__pais= None
 
     @property
     def nombre(self):
@@ -34,7 +34,7 @@ class Piloto:
         return self.__pais
     
     @Pais.setter
-    def Pais(self,dato):
-        self.__Pais=dato
+    def pais(self,dato):
+        self.__pais=dato
 
     
