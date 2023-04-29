@@ -17,3 +17,16 @@ while count < numEscuderias:
     count += 1
     
     escuderias.append(escuderia)
+
+
+''' recorriendo la lista de escuderias '''
+
+for escuderia in escuderias:
+    print(f' {escuderia.name} {escuderia.costos}')
+
+costoMayor = 0
+nombreEscuderiaMasCara = None
+for escuderia in escuderias:
+    if costoMayor < escuderia.costos:
+        costoMayor = escuderia.costos
+        nombreEscuderiaMasCara = escuderia.name
