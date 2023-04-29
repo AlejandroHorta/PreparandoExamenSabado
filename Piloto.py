@@ -1,7 +1,6 @@
 class Piloto:
-    def __init__(self):
-        self.__nombre= None
-        self.__fechaNacimiento= None
-        self.__salarioAnual= None
-        self.__Pais= None
-        
+  def __init__(self) -> None:
+    self.__name = None
+    self.__dateStart = None
+    self.__salary = None
+    self.__country = None
