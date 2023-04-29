@@ -1,4 +1,3 @@
-
 from Piloto import Piloto
 
 class Escuderia:
