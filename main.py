@@ -15,10 +15,10 @@ while contador <  numeroEscuderias:
    escuderia.piloto2.nombre=input("digite nombre :")
    escuderia.piloto2.salarioAnual=input("digite salario :")
    escuderia.piloto2.fechaNacimiento=input("digite fecha :")
-   escuderia.piloto2.Pais=input("digite pais :")
-   escuderia.costos=input("digite volor de los costos :")
+   escuderia.piloto2.pais=input("digite pais :")
+   escuderia.costos=int(input("digite volor de los costos :"))
    
-   escuderia.append(escuderia)
+   escuderias.append(escuderia)
    
 #RECORRIENDO LA LISTA DE ESCUDERIA
 for escuderia in escuderias:
@@ -26,7 +26,7 @@ for escuderia in escuderias:
  
  costoMayor=0
  nombreEscuderiaMasCara=None   
- if escuderia.costos > costoMayor:
+ if escuderia.costos> costoMayor:
        costoMayor=escuderia.costos
        nombreEscuderiaMasCara=escuderia.nombre
        

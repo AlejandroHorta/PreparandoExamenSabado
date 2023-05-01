@@ -30,10 +30,10 @@ class Piloto:
         self.__salarioAnual=dato
     
     @property
-    def Pais(self):
+    def pais(self):
         return self.__pais
     
-    @Pais.setter
+    @pais.setter
     def pais(self,dato):
         self.__pais=dato
 
